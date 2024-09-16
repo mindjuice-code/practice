@@ -13,10 +13,10 @@ body {
     height: 100vh;
 }
 
-.left-side {
+.side-a {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .logo-container {
@@ -25,7 +25,8 @@ body {
 }
 
 .logo-container img {
-    width: 150px;
+    width: 80px;
+    margin-right: 15px;
 }
 
 .logo-container h1 {
@@ -33,78 +34,78 @@ body {
     font-size: 2rem;
 }
 
-.left-side .pic-container {
-    width: 500px;
-    height: 500px;
-    background-color: rgba(27,29,77,255);
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
+.illustration-container {
+    margin-top: 50px;
+}
+
+.illustration-container img {
+    width: 400px; 
+}
+
+.side-b {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.left-side .pic-container img {
-    max-width: 150%;  
-    max-height: 100%; 
-    object-fit: contain; 
-}
-
-
-
-.right-side {
-    background-color: rgba(19,15,49,255);
+.form {
+    background-color:rgba(19,15,49,255); 
     padding: 40px;
     border-radius: 20px;
-    color: white;
     width: 350px;
-}
-
-.right-side h2 {
-    margin-bottom: 30px;
     text-align: center;
+    color: white;
 }
 
-.right-side label {
-    font-size: 0.9rem;
+.form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
 }
 
-.right-side input[type="email"], 
-.right-side input[type="password"] {
+.form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
 }
 
 .remember-me {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.right-side .form-actions {
-    display: flex;
-    justify-content: flex-end;
+.remember-me input[type="checkbox"] {
+    margin-right: 10px;
 }
 
-.right-side input[type="submit"] {
-    padding: 10px 30px;
-    background-color: #6C63FF;
-    border: none;
+.sign-in {
+    background-color: #6c63ff;
     color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
     font-size: 1rem;
-    border-radius: 5px;
+    width: 100%;
     cursor: pointer;
 }
 
-.right-side a {
+.forgot-password {
     display: block;
-    text-align: center;
     margin-top: 20px;
     color: white;
     text-decoration: none;
+    font-size: 0.9rem;
 }
+

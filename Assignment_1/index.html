@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
+    <title>Burma Link - Admin Login</title>
+    <link rel="icon" href="Burma Link logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="left-side">
+        <div class="side-a">
             <div class="logo-container">
-            <img src="Burma Link logo.png" alt="Burma Link Logo" class="logo">
-            <h1>Burma Link Channel</h1>
+                <img src="Burma Link logo.png" alt="Burma Link Logo" class="logo">
+                <h1>Burma Link Channel</h1>
             </div>
-
-            <div class="pic-container">
-            <img src="Access.png" alt="Access Illustration" class="access-image">
+            <div class="illustration-container">
+                <img src="Access.png" alt="Sign In Illustration" class="illustration">
             </div>
         </div>
 
-        <div class="right-side">
-            <h2>Admin Sign In</h2>
-            <form action="#" method="post">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+        <div class="side-b">
+            <div class="form">
+                <h2>Admin Sign In</h2>
+                <form action="#" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
 
-                <div class="remember-me">
-                    <input type="checkbox" id="remember-me" name="remember-me">
-                    <label for="remember-me">Remember Me</label>
-                </div>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me" name="remember-me">
+                        <label for="remember-me">Remember Me</label>
+                    </div>
 
-                <div class="form-actions">
-                    <input type="submit" value="Sign In">
-                </div>
-            </form>
-            <a href="#">Forget Password</a>
+                    <button class="sign-in" type="submit">Sign In</button>
+                </form>
+                <a href="#" class="forgot-password">Forget Password</a>
+            </div>
         </div>
     </div>
 </body>
